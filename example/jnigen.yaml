@@ -1,0 +1,23 @@
+android_sdk_config:
+  add_gradle_deps: true
+
+output:
+  c:
+    library_name: logtest
+    path: ../src/logtest/
+  dart:
+    path: ../lib/gen/
+
+class_path:
+  - '../android/lib/classes.jar'
+#
+#maven_downloads:
+#  source_deps:
+#    - 'com.tencent.mars:mars-xlog:1.2.6'
+
+classes:
+  - 'com.tencent.mars.xlog.Xlog'
+  - 'com.tencent.mars.xlog.Log'
+
+enable_experiment:
+  - interface_implementation
